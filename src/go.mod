@@ -1,4 +1,4 @@
-module blue-telephone-d
+module noise-test
 
 go 1.22.5
 

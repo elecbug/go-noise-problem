@@ -1,0 +1,12 @@
+root@.../go-noise-problem# docker run -it test
+2024/08/17 06:07:48 Self: [/ip4/127.0.0.1/tcp/39859 /ip4/172.17.0.2/tcp/39859] 12D3KooWEy9zuUv1qc6JfswHGgvZxCVw2RWQwmzMMgwQC6xQz2RT
+2024/08/17 06:08:02 Found: {12D3KooWAn1oVgmzmYF64xQpPL52rVVWatCQw5s8WDbToaXTxvYw: [/ip4/127.0.0.1/tcp/41965 /ip4/172.17.0.3/tcp/41965]}
+2024/08/17 06:08:09 Found: {12D3KooW9ySZUUY7b7xhEUkPny5NMGaMeLvuyQmmF7U6ieznJo7Y: [/ip4/127.0.0.1/tcp/33779 /ip4/172.17.0.3/tcp/33779]}
+2024/08/17 06:08:24 Found: {12D3KooWNkiPAMLLorVuqjAPWjo6w6WE5CFT67b1dWVWyg5Ruh4g: [/ip4/127.0.0.1/tcp/37107 /ip4/172.17.0.3/tcp/37107]}
+2024/08/17 06:08:27 Found: {12D3KooWHSbowE11HW22qdD8EGWMdBwD8cNXX334bWxYdNWk2n5g: [/ip4/127.0.0.1/tcp/39443 /ip4/172.17.0.3/tcp/39443]}
+2024/08/17 06:08:29 Found: {12D3KooWAT1YDAZm5ux9ZTrjDCrGM8dGXLxYZcfZszsXGBx9xRRG: [/ip4/127.0.0.1/tcp/39481 /ip4/172.17.0.3/tcp/39481]}
+2024/08/17 06:08:31 Found: {12D3KooWML2GZt9nP4JPprdno4H2EgcWcxmMh9gc1MvrfNdmF6AA: [/ip4/127.0.0.1/tcp/35611 /ip4/172.17.0.3/tcp/35611]}
+2024/08/17 06:08:32 Found: {12D3KooWJZr4WhUoyNLRzaCaJSrbZ79GTEqGPNKhcwdcG2SqPpRd: [/ip4/127.0.0.1/tcp/37463 /ip4/172.17.0.3/tcp/37463]}
+2024/08/17 06:08:34 failed to dial: failed to dial 12D3KooWGdPNKAWySFjmWCJXPNP4UBcdtE9uT9eGJd3HyvPChAgD: all dials failed
+  * [/ip4/127.0.0.1/tcp/45231] dial tcp4 127.0.0.1:45231: connect: connection refused
+  * [/ip4/172.17.0.3/tcp/45231] failed to negotiate security protocol: error reading handshake message: noise: message is too short
