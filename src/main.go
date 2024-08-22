@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"log"
+	"time"
 
 	"github.com/libp2p/go-libp2p"
 	"github.com/libp2p/go-libp2p/core/host"
@@ -52,7 +54,13 @@ func CreateHostAndExchangeInfo(ctx context.Context) {
 		for {
 			found := <-peerChan
 
+			order := (bytes.Compare([]byte(host.ID()), []byte(found.ID)))
+			if order == -1 {
+				time.Sleep(100*time.Millisecond)
+			}
+			// existing code below
 			err = host.Connect(ctx, found)
+
 			// host.Peerstore().AddAddrs(found.ID, found.Addrs, 1*time.Hour)
 
 			if err != nil {
